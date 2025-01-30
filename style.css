@@ -1,0 +1,376 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f3f4f6;
+    color: #111827;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-image: url('path-to-your-image.jpg');
+    background-size: cover;
+    background-position: center;
+  }
+  
+  
+  /* Navbar Styling */
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(51, 51, 51, 0.8); /* Transparent background for navbar */
+    padding: 1rem 1.5rem;
+    color: white;
+  }
+  
+  .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .nav-links {
+    display: flex;
+    list-style: none;
+  }
+  
+  .nav-links li {
+    margin: 0 1rem;
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+  }
+  
+  .nav-links a:hover {
+    color: #ff6f61;
+  }
+  
+  .burger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+  }
+  
+  .burger .line {
+    background-color: white;
+    height: 3px;
+    width: 25px;
+    margin: 3px 0;
+  }
+  
+  /* Hero Section */
+  .hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    padding: 2rem 1rem;
+    background-color: rgba(37, 99, 235, 0.8); /* Transparent background */
+    color: white;
+    flex-direction: column;
+    animation: fadeIn 2s ease-in-out;
+  }
+  
+  .hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    animation: slideIn 1.5s ease-in-out;
+  }
+  
+  .hero p {
+    font-size: 1.2rem;
+    animation: fadeIn 2s ease-in-out;
+  }
+  
+  /* Keyframe Animations */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes slideIn {
+    from {
+      transform: translateX(-100%);
+    }
+    to {
+      transform: translateX(0);
+    }
+  }
+  
+  /* About Section */
+  .about-section {
+    padding: 2rem 1rem;
+    text-align: center;
+    background-color: #ffffff;
+    margin: 1rem auto;
+    max-width: 800px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 2s ease-in-out;
+  }
+  
+  .about-section h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .about-section p {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+  }
+  
+  /* Services Section */
+  .services-section {
+    padding: 2rem 1rem;
+    background-color: #f9fafb;
+    text-align: center;
+    animation: fadeIn 2s ease-in-out;
+  }
+  
+  .services-section h1 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .services-section ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .services-section li {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin: 1rem 0;
+  }
+  
+  /* Contact Section */
+  .contact-section {
+    padding: 2rem 1rem;
+    background-color: #ffffff;
+    text-align: center;
+    margin-top: 2rem;
+    animation: fadeIn 2s ease-in-out;
+  }
+  
+  .contact-section h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .contact-section a {
+    color: #2563eb;
+    text-decoration: none;
+  }
+  
+  .contact-section a:hover {
+    color: #1d4ed8;
+  }
+  
+  /* Phishing Detection Section */
+  .container {
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    text-align: center;
+    width: 90%;
+    max-width: 400px;
+    margin: 2rem auto;
+  }
+  
+  .container h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .container input[type="url"] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    font-size: 16px;
+  }
+  
+  .container button {
+    background-color: #2563eb;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .container button:hover {
+    background-color: #1d4ed8;
+  }
+  
+  .result {
+    margin-top: 20px;
+    font-size: 18px;
+  }
+  
+  /* Footer Styling */
+  footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-top: auto;
+  }
+  
+  /* Responsive Design */
+  @media screen and (max-width: 768px) {
+    .nav-links {
+      display: none;
+      flex-direction: column;
+      width: 100%;
+      background-color: #333;
+      position: absolute;
+      top: 60px;
+      left: 0;
+    }
+  
+    .nav-links.active {
+      display: flex;
+    }
+  
+    .burger {
+      display: flex;
+    }
+  }
+  /* Add this to your existing CSS */
+  
+  /* Phishing Detection Section */
+  .container {
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    text-align: center;
+    width: 90%;
+    max-width: 400px;
+    margin: 2rem auto;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .container:hover {
+    transform: scale(1.05);
+  }
+  
+  .container h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .container input[type="url"] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    font-size: 16px;
+  }
+  
+  .container button {
+    background-color: #2563eb;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .container button:hover {
+    background-color: #1d4ed8;
+    transform: translateY(-3px);
+  }
+  
+  /* Download Page Styling */
+  .download-page {
+    background-color: #f9fafb;
+    padding: 2rem;
+    margin-top: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .download-page h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .download-page ul {
+    list-style-type: none;
+    padding: 0;
+    font-size: 1.1rem;
+  }
+  
+  .download-page li {
+    margin-bottom: 1rem;
+  }
+  
+  .download-page button {
+    background-color: #2563eb;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .download-page button:hover {
+    background-color: #1d4ed8;
+  }
+  
+  /* Add animations to buttons */
+  @keyframes button-hover {
+    0% {
+      transform: scale(1);
+    }
+    100% {
+      transform: scale(1.1);
+    }
+  }
+  
+  /* Responsiveness */
+  @media screen and (max-width: 768px) {
+    .nav-links {
+      display: none;
+      flex-direction: column;
+      width: 100%;
+      background-color: #333;
+      position: absolute;
+      top: 60px;
+      left: 0;
+    }
+  
+    .nav-links.active {
+      display: flex;
+    }
+  
+    .burger {
+      display: flex;
+    }
+  }
+  
+  
+  
+  

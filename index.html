@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Phishing Detection</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+
+    <nav class="navbar">
+      
+      <div class="logo">Phishing Website</div>
+      <ul class="nav-links">
+        <li><a href="#home" target="_blank">Home</a></li>
+        <li><a href="#services"  target="_blank">Services</a></li>
+        
+        <li><a href="#container"  target="_blank">Prediction</a></li>
+
+        <li><a href="#about"  target="_blank">About</a></li>
+        <li><a href="#contact"  target="_blank">Contact</a></li>
+      </ul>
+      <div class="burger">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+     
+    <section id="home" class="hero">
+      <h1>Welcome to My Website</h1>
+      <p>Explore the content using the navigation bar above!</p>
+    </section>
+    <!-- Services Section -->
+    <section id="services" class="services-section">
+      <h1>Our Services</h1>
+      <ul>
+        <li><strong>Phishing Detection:</strong> Our service helps identify suspicious URLs to ensure your safety while browsing the web.</li>
+        <li><strong>Web Development:</strong> We offer expert web development services to build modern, responsive, and secure websites.</li>
+        <li><strong>Consulting:</strong> Our team provides consultation on cybersecurity, helping you protect your online presence.</li>
+      </ul>
+    </section>
+
+<!-- Phishing Detection Section -->
+<section id="container" class="container">
+  <h1>Phishing Detection</h1>
+  <form id="phishingForm">
+    <input type="url" id="urlInput" placeholder="Enter a URL to check" required>
+    <button type="submit">Check</button>
+  </form>
+  <div class="result" id="result"></div>
+</section>
+
+<!-- Download Section (hidden initially) -->
+<section id="downloadPage" class="download-page" style="display: none;">
+  <h1>Phishing URL Report</h1>
+  <p>Details for the suspicious URL:</p>
+  <ul>
+    <li><strong>URL:</strong> <span id="urlDetails"></span></li>
+    <li><strong>Location:</strong> <span id="urlLocation"></span></li>
+  </ul>
+  <button id="downloadBtn">Download Report</button>
+</section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+      <h1>About Us</h1>
+      <p>
+        Welcome to MyWebsite, your trusted platform for exploring innovative solutions in web development and technology.
+        Our mission is to empower individuals and businesses by providing user-friendly and impactful tools tailored to their needs.
+      </p>
+      <p>
+        We are passionate about creating secure, accessible, and engaging digital experiences. From offering educational resources 
+        to building customized solutions, we focus on quality, creativity, and excellence in everything we do.
+      </p>
+      <p>
+        At MyWebsite, we believe in the power of collaboration and innovation to drive progress and success. Join us on this journey, 
+        and let's create something extraordinary together!
+      </p>
+    </section>
+
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+      <h1>Contact Us</h1>
+      <p>If you have any questions or would like to learn more about our services, feel free to reach out to us!</p>
+      <p>Email: <a href="mailto:contact@phishingwebsite.com">contact@phishingwebsite.com</a></p>
+      <p>Phone: +91 8619214619</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>Created by Vaishnavi Yadav</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
